@@ -1,0 +1,426 @@
+[
+  {
+    "cost": 500,
+    "question": "Q500-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": true,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      },
+      {
+        "truth": false,
+        "text": "a5"
+      },
+      {
+        "truth": false,
+        "text": "a6"
+      }
+    ]
+  },
+  {
+    "cost": 500,
+    "question": "Q500-2",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 500,
+    "question": "Q500-3",
+    "answers": [
+      {
+        "truth": false,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 500,
+    "question": "Q500-4",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": true,
+        "text": "a3"
+      },
+      {
+        "truth": true,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 500,
+    "question": "Q500-5",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": true,
+        "text": "a2"
+      },
+      {
+        "truth": true,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 1000,
+    "question": "Q1000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 2000,
+    "question": "Q2000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 4000,
+    "question": "Q4000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 8000,
+    "question": "Q8000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 8000,
+    "question": "Q8000-2",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 16000,
+    "question": "Q16000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 32000,
+    "question": "Q32000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 64000,
+    "question": "Q64000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 125000,
+    "question": "Q125000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 250000,
+    "question": "Q250000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 500000,
+    "question": "Q500000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 1000000,
+    "question": "Q1000000-1",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": 1000000,
+    "question": "Q1000000-2",
+    "answers": [
+      {
+        "truth": true,
+        "text": "a1"
+      }
+    ]
+  },
+  {
+    "cost": 1000000,
+    "question": "Q1000000-3",
+    "answers": [
+      {
+        "truth": false,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  },
+  {
+    "cost": "11111",
+    "question": "Q1000000-3",
+    "answers": [
+      {
+        "truth": false,
+        "text": "a1"
+      },
+      {
+        "truth": false,
+        "text": "a2"
+      },
+      {
+        "truth": false,
+        "text": "a3"
+      },
+      {
+        "truth": false,
+        "text": "a4"
+      }
+    ]
+  }
+]
