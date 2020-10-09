@@ -1,0 +1,74 @@
+.blankGradeOverlay {
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.blankGradeOverlay:first-of-type {
+  margin-bottom: 0;
+}
+
+.blankGradeOverlay::before {
+  position: absolute;
+  top: 50%;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+}
+
+.blankGradeOverlay_disactive::before,
+.blankGradeOverlay_normal::before {
+  background: #d0d0d8;
+}
+.blankGradeOverlay_active::before {
+  background: #ff8b37;
+}
+
+.blankGrade {
+  margin: 0 auto;
+  position: relative;
+  width: 240px;
+  height: 32px;
+}
+
+.blankGradeSvg {
+  width: 240px;
+  height: 32px;
+}
+
+.blankGradeSvg_active path {
+  stroke: #ff8b37;
+}
+
+.blankGradeText {
+  max-width: 240px;
+  max-height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.blankGradeText_active {
+  color: #ff8b37;
+}
+
+.blankGradeText_disactive {
+  color: #d0d0d8;
+}
+
+@media (min-width: 1200px) {
+  .blankGrade {
+    height: 40px;
+  }
+
+  .blankGradeSvg {
+    height: 40px;
+  }
+}

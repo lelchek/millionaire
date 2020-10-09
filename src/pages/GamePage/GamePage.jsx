@@ -2,15 +2,18 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Redirect } from 'react-router-dom'
 import { TotalScoreContext } from '../../context/TotalScore'
 import Answers from '../../components/Answers'
-import Board from '../../components/Board'
+import Board from '../../components/BoardGrade'
 import validateQuestions from '../../helpers/validateQuestions'
 import createObjQuestions from '../../helpers/createObjQuestions'
 import randomIndex from '../../helpers/getRandomIndex'
 import createArrAnswers from '../../helpers/createArrAnswers'
 
+import './gamePage.css'
+
 import data from '../../data/questions.json'
 
 export default function GamePage() {
+  const [isOpenBoard, setIsOpenBoard] = useState('hidden')
   const [stopGame, setStopGame] = useState(false) //редирект
   const [objQuestions, setObjQuestions] = useState(null) //старт
   const [arrGrades, setArrGrades] = useState([]) //борд
@@ -87,13 +90,24 @@ export default function GamePage() {
   }
 
   return (
-    <div>
-      <div>
-        <p>{textQuestion}</p>
-        <Answers setResult={setResult} arrAnswers={arrAnswers} />
+    <div className="gameContainer">
+      <div className="gameContentBlock">
+        <p className="gameQuestion">{textQuestion}</p>
+        <div className="answersBlock">
+          <Answers setResult={setResult} arrAnswers={arrAnswers} />
+        </div>
+        <button
+          className="gameButton openBoardButton"
+          onClick={() => setIsOpenBoard('active')}
+        />
       </div>
-      <div>
+
+      <div className={`boardBlock boardBlock_${isOpenBoard}`}>
         <Board arrGrades={arrGrades} currentGradeIndex={currentGradeIndex} />
+        <button
+          className="gameButton closeBoardButton"
+          onClick={() => setIsOpenBoard('hidden')}
+        />
       </div>
     </div>
   )

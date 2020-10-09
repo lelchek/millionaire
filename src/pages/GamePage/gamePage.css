@@ -1,0 +1,113 @@
+.gameContainer {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.gameContentBlock {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 18% 0 10%;
+  position: relative;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gameQuestion {
+  margin: 0;
+  padding: 0 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+
+.boardBlock {
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f7;
+}
+
+.boardBlock_active {
+  display: flex;
+}
+.boardBlock_hidden {
+  display: none;
+}
+
+.gameButton {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.openBoardButton {
+  width: 16px;
+  height: 14px;
+  background-image: url(../../images/burger.svg);
+}
+
+.closeBoardButton {
+  width: 13px;
+  height: 13px;
+  background-image: url(../../images/close.svg);
+}
+
+@media (min-width: 768px) {
+  .gameContainer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .gameContentBlock {
+    width: 65%;
+    padding: 10% 0 10%;
+  }
+  .boardBlock {
+    position: relative;
+    width: 35%;
+    background-color: #fff;
+  }
+  .boardBlock_hidden {
+    display: flex;
+  }
+  .gameButton {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .gameContentBlock {
+    width: 74%;
+    padding: 10% 5%;
+  }
+  .gameQuestion {
+    text-align: left;
+    padding: 0;
+  }
+  .answersBlock {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .boardBlock {
+    width: 26%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gameContentBlock {
+    padding: 5% 5%;
+  }
+  .gameQuestion {
+    font-size: 32px;
+  }
+}

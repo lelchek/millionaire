@@ -1,0 +1,39 @@
+.mainButton {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 288px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #ff8b37;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.mainButton:hover {
+  background-color: #ffac70;
+}
+
+.mainButton:active {
+  background-color: #e87928;
+}
+
+@media (min-width: 768px) {
+  .mainButton {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .mainButton {
+    width: 296px;
+    height: 64px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+}

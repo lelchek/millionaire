@@ -1,19 +1,34 @@
-import React, { useEffect } from 'react'
-import Blank from '../Blank'
+import React, { useState } from 'react'
+import BlankAnswer from '../BlankAnswer'
+
+const ENUM = {
+  0: 'a',
+  1: 'b',
+  2: 'c',
+  3: 'd',
+}
 
 export default function Answers({ arrAnswers, setResult }) {
-  useEffect(() => {
-    console.log('arrAnswers', arrAnswers)
-    // createArrAnswers()
-  }, [arrAnswers])
+  const [isDisabled, setIsDisabled] = useState(false)
+
+  function handleDisabled(value) {
+    setIsDisabled(value)
+  }
+
   return (
-    <div>
+    <>
       {arrAnswers.map((item, index) => (
-        <div key={index} onClick={() => setResult(item.truth)}>
-          {item.text}
-        </div>
+        <BlankAnswer
+          key={ENUM[index]}
+          marker={ENUM[index]}
+          text={item.text}
+          truth={item.truth}
+          setResult={setResult}
+          onDisabled={handleDisabled}
+          isDisabled={isDisabled}
+          variant="blankAnswer"
+        />
       ))}
-      <Blank />
-    </div>
+    </>
   )
 }

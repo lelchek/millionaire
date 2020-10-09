@@ -1,13 +1,67 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: #ffffff;
+  color: #1c1c21;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: block;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+h1,
+ul,
+p {
+  margin: 0;
+}
+
+ul,
+button {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contentBlock {
+  padding-top: 20%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contentBlock {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
 }
