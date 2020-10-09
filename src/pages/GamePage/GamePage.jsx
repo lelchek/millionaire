@@ -14,16 +14,16 @@ import data from '../../data/questions.json'
 
 export default function GamePage() {
   const [isOpenBoard, setIsOpenBoard] = useState('hidden')
-  const [stopGame, setStopGame] = useState(false) //редирект
-  const [objQuestions, setObjQuestions] = useState(null) //старт
-  const [arrGrades, setArrGrades] = useState([]) //борд
-  const [currentGradeIndex, setCurrentGradeIndex] = useState(0) //борд
+  const [stopGame, setStopGame] = useState(false)
+  const [objQuestions, setObjQuestions] = useState(null)
+  const [arrGrades, setArrGrades] = useState([])
+  const [currentGradeIndex, setCurrentGradeIndex] = useState(0)
   const [gradeQuestions, setGradeQuestions] = useState([])
-  const [randomQuestion, setRandomQuestion] = useState(null) //текущий вопрос для локала
-  const [textQuestion, setTextQuestion] = useState(null) //тег p
-  const [arrAnswers, setArrAnswers] = useState([]) //вопросы
-  const [currentScore, setCurrentScore] = useState(0) //просчет суммы
-  const [, setTotalScoreState] = useContext(TotalScoreContext) //контекст
+  const [randomQuestion, setRandomQuestion] = useState(null)
+  const [textQuestion, setTextQuestion] = useState(null)
+  const [arrAnswers, setArrAnswers] = useState([])
+  const [currentScore, setCurrentScore] = useState(0)
+  const [, setTotalScoreState] = useContext(TotalScoreContext)
 
   useEffect(() => {
     const tempValidate = validateQuestions(data)
@@ -56,9 +56,7 @@ export default function GamePage() {
     if (!randomQuestion) {
       return
     }
-
     const { question, answers } = randomQuestion
-
     setTextQuestion(question)
     setArrAnswers(createArrAnswers(answers))
   }, [randomQuestion])

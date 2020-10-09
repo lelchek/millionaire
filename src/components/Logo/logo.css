@@ -1,19 +1,20 @@
 .logo {
   margin: 0 auto;
-  width: 196px;
-  height: 155px;
+  width: 12.25rem;
+  height: 9.6875rem;
   margin-bottom: 10%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .logo {
     margin: 0;
     margin-bottom: 0;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 75rem) {
   .logo {
-    width: 452px;
-    height: 356px;
+    width: 28.25rem;
+    height: 22.25rem;
   }
 }

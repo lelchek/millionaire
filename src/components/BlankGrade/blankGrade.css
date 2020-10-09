@@ -1,7 +1,7 @@
 .blankGradeOverlay {
   width: 100%;
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .blankGradeOverlay:first-of-type {
@@ -14,13 +14,14 @@
   display: block;
   content: '';
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
 }
 
 .blankGradeOverlay_disactive::before,
 .blankGradeOverlay_normal::before {
   background: #d0d0d8;
 }
+
 .blankGradeOverlay_active::before {
   background: #ff8b37;
 }
@@ -28,13 +29,13 @@
 .blankGrade {
   margin: 0 auto;
   position: relative;
-  width: 240px;
-  height: 32px;
+  width: 15rem;
+  height: 2rem;
 }
 
 .blankGradeSvg {
-  width: 240px;
-  height: 32px;
+  width: 15rem;
+  height: 2rem;
 }
 
 .blankGradeSvg_active path {
@@ -42,8 +43,8 @@
 }
 
 .blankGradeText {
-  max-width: 240px;
-  max-height: 32px;
+  max-width: 15rem;
+  max-height: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,7 +52,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   overflow: hidden;
 }
 
@@ -63,12 +64,12 @@
   color: #d0d0d8;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .blankGrade {
-    height: 40px;
+    height: 2.5rem;
   }
 
   .blankGradeSvg {
-    height: 40px;
+    height: 2.5rem;
   }
 }

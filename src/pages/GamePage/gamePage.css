@@ -16,10 +16,10 @@
 
 .gameQuestion {
   margin: 0;
-  padding: 0 16px;
+  padding: 0 1rem;
   text-align: center;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 10%;
 }
 
@@ -38,76 +38,85 @@
 .boardBlock_active {
   display: flex;
 }
+
 .boardBlock_hidden {
   display: none;
 }
 
 .gameButton {
   position: absolute;
-  top: 21px;
-  right: 21px;
+  top: 1.3125rem;
+  right: 1.3125rem;
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
 }
 
 .openBoardButton {
-  width: 16px;
-  height: 14px;
+  width: 1rem;
+  height: 0.875rem;
   background-image: url(../../images/burger.svg);
 }
 
 .closeBoardButton {
-  width: 13px;
-  height: 13px;
+  width: 0.8125rem;
+  height: 0.8125rem;
   background-image: url(../../images/close.svg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .gameContainer {
     display: flex;
     flex-wrap: nowrap;
   }
+
   .gameContentBlock {
     width: 65%;
     padding: 10% 0 10%;
   }
+
   .boardBlock {
     position: relative;
     width: 35%;
     background-color: #fff;
   }
+
   .boardBlock_hidden {
     display: flex;
   }
+
   .gameButton {
     display: none;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .gameContentBlock {
     width: 74%;
     padding: 10% 5%;
   }
+
   .gameQuestion {
     text-align: left;
     padding: 0;
   }
+
   .answersBlock {
     display: flex;
     flex-wrap: wrap;
   }
+
   .boardBlock {
     width: 26%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .gameContentBlock {
     padding: 5% 5%;
   }
+
   .gameQuestion {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }

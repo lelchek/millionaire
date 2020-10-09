@@ -5,7 +5,6 @@ import DefaultPage from './pages/DefaultPage'
 import GamePage from './pages/GamePage'
 import StartPage from './pages/StartPage'
 import WinnerPage from './pages/WinnerPage'
-import './App.css';
 
 export default function App() {
   return (

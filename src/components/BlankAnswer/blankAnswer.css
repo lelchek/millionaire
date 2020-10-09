@@ -1,7 +1,7 @@
 .blankAnswerOverlay {
   width: 100%;
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .blankAnswerOverlay::before {
@@ -10,7 +10,7 @@
   display: block;
   content: '';
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
 }
 
 .blankAnswerOverlay_inactive::before {
@@ -20,8 +20,8 @@
 .blankAnswer {
   margin: 0 auto;
   position: relative;
-  width: 288px;
-  height: 56px;
+  width: 18rem;
+  height: 3.5rem;
 }
 
 .blankAnswer:disabled {
@@ -29,8 +29,8 @@
 }
 
 .blankAnswerSvg {
-  width: 288px;
-  height: 56px;
+  width: 18rem;
+  height: 3.5rem;
 }
 
 .blankAnswerSvg_inactive path:hover {
@@ -69,17 +69,17 @@
 }
 
 .blankAnswerText {
-  max-width: 288px;
-  max-height: 56px;
+  max-width: 18rem;
+  max-height: 3.5rem;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   cursor: pointer;
-  padding: 4px 24px;
+  padding: 0.25rem 1.5rem;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   overflow: hidden;
 }
 
@@ -87,34 +87,38 @@
   text-transform: uppercase;
   font-weight: 600;
   color: #ff8b37;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .blankAnswerOverlay {
     width: 50%;
   }
+
   .blankAnswerOverlay:nth-of-type(3) {
     margin-bottom: 0;
   }
+
   .blankAnswerOverlay:nth-of-type(4) {
     margin-bottom: 0;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 75rem) {
   .blankAnswer {
-    width: 373px;
-    height: 72px;
+    width: 23.3125rem;
+    height: 4.5rem;
   }
+
   .blankAnswerSvg {
-    width: 373px;
-    height: 72px;
+    width: 23.3125rem;
+    height: 4.5rem;
   }
 
   .blankAnswerText {
-    max-width: 373px;
-    max-height: 72px;
-    padding: 8px 32px;
+    max-width: 23.3125rem;
+    max-height: 4.5rem;
+    padding: 0.5rem 32px;
     font-size: 20px;
   }
 }

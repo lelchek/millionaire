@@ -3,13 +3,13 @@
   bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
-  width: 288px;
-  height: 48px;
-  border-radius: 8px;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 0.5rem;
   background-color: #ff8b37;
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .mainButton:hover {
@@ -20,7 +20,7 @@
   background-color: #e87928;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .mainButton {
     position: relative;
     bottom: 0;
@@ -29,11 +29,11 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .mainButton {
-    width: 296px;
-    height: 64px;
-    border-radius: 12px;
-    font-size: 20px;
+    width: 18.5rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
   }
 }

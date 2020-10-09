@@ -17,6 +17,7 @@ export default function WinnerPage() {
   if (isTryAgain) {
     return <Redirect to="/game" />
   }
+
   return (
     <div className="container winContainer">
       <div className="contentOverlay">

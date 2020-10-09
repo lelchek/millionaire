@@ -1,425 +1,287 @@
 [
   {
     "cost": 500,
-    "question": "Q500-1",
+    "question": "Which of Shakespeare's characters do these words belong to? - \"To be or not to be - that is the question\"",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
-      },
-      {
-        "truth": true,
-        "text": "a2"
+        "text": "Hamlet"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Romeo"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "Othello"
       },
       {
         "truth": false,
-        "text": "a5"
-      },
-      {
-        "truth": false,
-        "text": "a6"
+        "text": "King Lear"
       }
     ]
   },
   {
     "cost": 500,
-    "question": "Q500-2",
+    "question": "What do children usually say at Halloween?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "\"trick or treat\""
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "\"give or take\""
       },
       {
         "truth": false,
-        "text": "a4"
-      }
-    ]
-  },
-  {
-    "cost": 500,
-    "question": "Q500-3",
-    "answers": [
-      {
-        "truth": false,
-        "text": "a1"
+        "text": "\"cry or laugh\""
       },
       {
         "truth": false,
-        "text": "a3"
-      },
-      {
-        "truth": false,
-        "text": "a4"
-      }
-    ]
-  },
-  {
-    "cost": 500,
-    "question": "Q500-4",
-    "answers": [
-      {
-        "truth": true,
-        "text": "a1"
-      },
-      {
-        "truth": true,
-        "text": "a3"
-      },
-      {
-        "truth": true,
-        "text": "a4"
-      }
-    ]
-  },
-  {
-    "cost": 500,
-    "question": "Q500-5",
-    "answers": [
-      {
-        "truth": true,
-        "text": "a1"
-      },
-      {
-        "truth": true,
-        "text": "a2"
-      },
-      {
-        "truth": true,
-        "text": "a3"
-      },
-      {
-        "truth": false,
-        "text": "a4"
+        "text": "\"sing or dance\""
       }
     ]
   },
   {
     "cost": 1000,
-    "question": "Q1000-1",
+    "question": "Sir Christopher Wren built",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "St. Paul's Cathedral"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "The Tower of London"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Westminster Abbey"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "Buckingham Palace"
       }
     ]
   },
   {
     "cost": 2000,
-    "question": "Q2000-1",
+    "question": "In which month is Thanksgiving Day celebrated?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "November"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "February"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "March"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "December"
       }
     ]
   },
   {
     "cost": 4000,
-    "question": "Q4000-1",
+    "question": "This English speaking country has 2 official languages: French and English. What is this country?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Canada"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Australia"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "The USA"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "New Zealand"
       }
     ]
   },
   {
     "cost": 8000,
-    "question": "Q8000-1",
+    "question": "The Princess Diana was the wife of :",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Prince Charles"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Prince Wilhelm"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Prince Robert "
       },
       {
         "truth": false,
-        "text": "a4"
-      }
-    ]
-  },
-  {
-    "cost": 8000,
-    "question": "Q8000-2",
-    "answers": [
-      {
-        "truth": true,
-        "text": "a1"
-      },
-      {
-        "truth": false,
-        "text": "a2"
-      },
-      {
-        "truth": false,
-        "text": "a3"
-      },
-      {
-        "truth": false,
-        "text": "a4"
+        "text": "Prince Edward"
       }
     ]
   },
   {
     "cost": 16000,
-    "question": "Q16000-1",
+    "question": "The World Cup in this sport is played in Wimbledon.",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Tennis"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Rugby"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Ping-Pong"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "Football"
       }
     ]
   },
   {
     "cost": 32000,
-    "question": "Q32000-1",
+    "question": "Who wrote the story \"The old man and the sea\"?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Ernest Hemingway"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Mark Twain"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Edgar Poe"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "Walt Whitman"
       }
     ]
   },
   {
     "cost": 64000,
-    "question": "Q64000-1",
+    "question": "What was Samuel Clemens' pen name?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Mark Twain"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Ray Bradbury"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Daniel Defoe"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "Jack London Daniel Defoe"
       }
     ]
   },
   {
     "cost": 125000,
-    "question": "Q125000-1",
+    "question": "The city that has the nickname of \"Big Apple\".",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "New York"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Washington, DC"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Chicago"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "Boston"
       }
     ]
   },
   {
     "cost": 250000,
-    "question": "Q250000-1",
+    "question": "Which part of Britain is not in the flag of the UK?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Wales"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Scotland"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Northern Ireland"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "England"
       }
     ]
   },
   {
     "cost": 500000,
-    "question": "Q500000-1",
+    "question": "How many stars are there on the flag of New Zealand?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "4"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "5"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "6"
       },
       {
         "truth": false,
-        "text": "a4"
+        "text": "7"
       }
     ]
   },
   {
     "cost": 1000000,
-    "question": "Q1000000-1",
+    "question": "Under what king did the Knights of the Round Table gather together?",
     "answers": [
       {
         "truth": true,
-        "text": "a1"
+        "text": "Arthur"
       },
       {
         "truth": false,
-        "text": "a2"
+        "text": "Henry IV"
       },
       {
         "truth": false,
-        "text": "a3"
+        "text": "Edward II"
       },
       {
         "truth": false,
-        "text": "a4"
-      }
-    ]
-  },
-  {
-    "cost": 1000000,
-    "question": "Q1000000-2",
-    "answers": [
-      {
-        "truth": true,
-        "text": "a1"
-      }
-    ]
-  },
-  {
-    "cost": 1000000,
-    "question": "Q1000000-3",
-    "answers": [
-      {
-        "truth": false,
-        "text": "a1"
-      },
-      {
-        "truth": false,
-        "text": "a2"
-      },
-      {
-        "truth": false,
-        "text": "a3"
-      },
-      {
-        "truth": false,
-        "text": "a4"
-      }
-    ]
-  },
-  {
-    "cost": "11111",
-    "question": "Q1000000-3",
-    "answers": [
-      {
-        "truth": false,
-        "text": "a1"
-      },
-      {
-        "truth": false,
-        "text": "a2"
-      },
-      {
-        "truth": false,
-        "text": "a3"
-      },
-      {
-        "truth": false,
-        "text": "a4"
+        "text": "William the Conqueror"
       }
     ]
   }
