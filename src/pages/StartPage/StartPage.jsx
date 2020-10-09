@@ -17,9 +17,9 @@ export default function StartPage() {
 
   return (
     <div className="container startContainer">
-      <div className="contentBlock">
+      <div className="contentOverlay">
         <Logo />
-        <div>
+        <div className="contentBlock">
           <h1 className="startTitle">Who wants to be a millionaire?</h1>
           <Button text="Start" handleClick={handleClick} />
         </div>

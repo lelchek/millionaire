@@ -8,7 +8,6 @@ export default function Logo() {
   return (
     <div className="logo">
       <picture>
-        <source media="(min-width: 1920px)" srcSet={logoXl} />
         <source media="(min-width: 1200px)" srcSet={logoXl} />
         <img src={logoXs} alt="logo" />
       </picture>

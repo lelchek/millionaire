@@ -1,13 +1,19 @@
 .logo {
-    margin: 0 auto;
-    width: 196px;
-    height: 155px;
-    margin-bottom: 10%;
+  margin: 0 auto;
+  width: 196px;
+  height: 155px;
+  margin-bottom: 10%;
 }
 
 @media (min-width: 768px) {
-    .logo {
-        margin-bottom: 0;
-        margin-right: 5%;
-    }
+  .logo {
+    margin: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    width: 452px;
+    height: 356px;
+  }
 }

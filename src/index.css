@@ -49,7 +49,7 @@ button {
   height: 100vh;
 }
 
-.contentBlock {
+.contentOverlay {
   padding-top: 20%;
 }
 
@@ -59,9 +59,22 @@ button {
     align-items: center;
     justify-content: center;
   }
-  .contentBlock {
+  .contentOverlay {
     padding-top: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+  .contentBlock {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contentOverlay {
+    justify-content: space-evenly;
+  }
+  .contentBlock {
+    width: 40%;
   }
 }
