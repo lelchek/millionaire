@@ -46,7 +46,8 @@ button {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 1.875rem 0;
 }
 
 .contentOverlay {

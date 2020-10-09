@@ -1,8 +1,5 @@
 .mainButton {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   width: 18rem;
   height: 3rem;
   border-radius: 0.5rem;
