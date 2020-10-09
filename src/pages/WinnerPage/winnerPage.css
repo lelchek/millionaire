@@ -36,6 +36,7 @@
     font-size: 32px;
   }
   .winEarned {
+    width: 600px;
     font-size: 56px;
     margin-bottom: 15%;
   }
