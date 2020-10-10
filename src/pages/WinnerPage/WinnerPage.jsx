@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Redirect } from 'react-router-dom'
 import { TotalScoreContext } from '../../context/TotalScore'
+import formatGrade from '../../helpers/formatGrade'
 import Logo from '../../components/Logo'
 import Button from '../../components/Button'
 
@@ -27,7 +28,7 @@ export default function WinnerPage() {
         <div className="contentBlock">
           <h1 className="winTitle">Total score:</h1>
           <p className="winEarned">
-            $<span>{value}</span> earned
+            <span>{formatGrade(value)}</span> earned
           </p>
           <Button text="Try Again" handleClick={handleClick} />
         </div>

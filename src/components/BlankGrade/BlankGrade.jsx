@@ -1,4 +1,5 @@
 import React from 'react'
+import formatGrade from '../../helpers/formatGrade'
 import './blankGrade.css'
 
 export default function ({ text, variant }) {
@@ -36,7 +37,7 @@ export default function ({ text, variant }) {
             />
           </svg>
         )}
-        <p className={`blankGradeText blankGradeText_${variant}`}>{text}</p>
+        <p className={`blankGradeText blankGradeText_${variant}`}>{formatGrade(text)}</p>
       </div>
     </li>
   )

@@ -118,7 +118,7 @@
   .blankAnswerText {
     max-width: 23.3125rem;
     max-height: 4.5rem;
-    padding: 0.5rem 32px;
+    padding: 0.5rem 2rem;
     font-size: 20px;
   }
 }
