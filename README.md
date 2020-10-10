@@ -1,68 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Who want to be a millionaire?
 
-## Available Scripts
+> Implementation of the basic functionality of the game
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Build](#Build)
+- [Format of Questions](#format-of-questions)
+- [Features](#features)
+
+## General info
+
+This game was written as a test task.
+In this game, the player takes turns answering one of 12 questions.
+Each question has 4 possible answers and only one is correct.
+The list of questions is in the `./src/data/questions.json`
+
+## Technologies
+
+Project is created with:
+
+- React version: 16.13.1
+- React Router version: 5.2.0
+
+Project is hosted with:
+
+- GitHub Pages version:3.1.0
+  [lelchek.github.io/millionaire](https://lelchek.github.io/millionaire)
+
+## Setup
+
+In the project directory to run this, install it using npm:
+
+```
+$ npm install
+$ npm start
+```
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Build
 
-### `npm test`
+Builds the app for production to the `build` folder.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ npm run build
+```
 
-### `npm run build`
+For publishing to GitHub Pages using:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ npm run deploy
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Format of Questions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The list of questions can be expanded.
+Questions must be in json format.
 
-### `npm run eject`
+```
+type Questions struct {
+  cost      int64
+  question  string
+  answers   array
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+type Answer struct {
+  truth  bool
+  text   string
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+When the game starts, the questions are validated.
+`./src/helpers/validateQuestions.js`
+The game will display only those questions that have:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- property `cost` int64
+- at least one correct answer
+- at least one wrong answer
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Array `answers` in each question can be any number of answers.
+From the entire array of questions, the function
+`./src/helpers/createArrAnswers.js` will randomly select only one correct and maximum three incorrect answers.
