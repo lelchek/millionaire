@@ -13,9 +13,9 @@
 
 ## General info
 
-This game was written as a test task.
-In this game, the player takes turns answering one of 12 questions.
-Each question has 4 possible answers and only one is correct.
+This game was written as a test task.<br />
+In this game, the player takes turns answering one of 12 questions.<br />
+Each question has 4 possible answers and only one is correct.<br />
 The list of questions is in the `./src/data/questions.json`
 
 ## Technologies
@@ -58,7 +58,7 @@ $ npm run deploy
 
 ## Format of Questions
 
-The list of questions can be expanded.
+The list of questions can be expanded.<br />
 Questions must be in json format.
 
 ```
@@ -78,14 +78,14 @@ type Answer struct {
 
 ## Features
 
-When the game starts, the questions are validated.
-`./src/helpers/validateQuestions.js`
+When the game starts, the questions are validated.<br />
+`./src/helpers/validateQuestions.js`<br />
 The game will display only those questions that have:
 
 - property `cost` int64
 - at least one correct answer
 - at least one wrong answer
 
-Array `answers` in each question can be any number of answers.
+Array `answers` in each question can be any number of answers.<br />
 From the entire array of questions, the function
 `./src/helpers/createArrAnswers.js` will randomly select only one correct and maximum three incorrect answers.

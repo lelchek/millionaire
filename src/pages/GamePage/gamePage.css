@@ -29,6 +29,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  padding: 5% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,12 +73,12 @@
 
   .gameContentBlock {
     width: 65%;
-    padding: 10% 0 10%;
   }
 
   .boardBlock {
     position: relative;
     width: 35%;
+    padding: 0;
     background-color: #fff;
   }
 
